@@ -35,6 +35,7 @@
 	@endif
 
 	<!-- Fancy Tree -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.36.1/skin-xp/ui.fancytree.min.css">
 
 	<!-- Country Flags -->
