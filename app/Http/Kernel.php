@@ -42,7 +42,7 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \Laravel\Passport\Http\Middleware\CreateFreshApiToken::class,
             ApplicationSession::class,
-            CheckUpdate::class,
+            // CheckUpdate::class,
         ],
 
         'api' => [
