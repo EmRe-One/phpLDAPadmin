@@ -14,28 +14,27 @@ namespace App\Classes\LDAP\Schema;
  * inheritance.
  */
 class ObjectClassAttribute extends Base {
-	// This Attribute's root.
-	private string $source;
+    // This Attribute's root.
+    private string $source;
 
-	/**
-	 * Creates a new ObjectClassAttribute with specified name and source objectClass.
-	 *
-	 * @param string $name the name of the new attribute.
-	 * @param string $source the name of the ObjectClass which specifies this attribute.
-	 */
-	public function __construct($name,$source)
-	{
-		$this->name = $name;
-		$this->source = $source;
-	}
+    /**
+     * Creates a new ObjectClassAttribute with specified name and source objectClass.
+     *
+     * @param string $name the name of the new attribute.
+     * @param string $source the name of the ObjectClass which specifies this attribute.
+     */
+    public function __construct($name, $source) {
+        $this->name   = $name;
+        $this->source = $source;
+    }
 
-	public function __get(string $key): mixed
-	{
-		switch ($key) {
-			case 'source':
-				return $this->source;
+    public function __get(string $key): mixed {
+        switch ($key) {
+            case 'source':
+                return $this->source;
 
-			default: return parent::__get($key);
-		}
-	}
+            default:
+                return parent::__get($key);
+        }
+    }
 }

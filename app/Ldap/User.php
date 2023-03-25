@@ -5,9 +5,8 @@ namespace App\Ldap;
 use Laravel\Passport\HasApiTokens;
 use LdapRecord\Models\OpenLDAP\User as Model;
 
-class User extends Model
-{
-	use HasApiTokens;
+class User extends Model {
+    use HasApiTokens;
 
     /**
      * The object classes of the LDAP model.
@@ -15,13 +14,14 @@ class User extends Model
      * @var array
      */
     public static $objectClasses = [
-    	'posixAccount',
-	];
+        'posixAccount',
+    ];
 
-	/* METHODS */
+    /* METHODS */
 
-	public function getDn(): string
-	{
-		return $this->exists ? parent::getDn() : 'Anonymous';
-	}
+    public function getDn(): string {
+        return $this->exists
+            ? parent::getDn()
+            : 'Anonymous';
+    }
 }

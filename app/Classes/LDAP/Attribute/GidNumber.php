@@ -7,6 +7,5 @@ use App\Classes\LDAP\Attribute;
 /**
  * Represents an GidNumber Attribute
  */
-final class GidNumber extends Attribute
-{
+final class GidNumber extends Attribute {
 }

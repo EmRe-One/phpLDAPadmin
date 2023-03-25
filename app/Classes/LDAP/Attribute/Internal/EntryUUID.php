@@ -7,6 +7,5 @@ use App\Classes\LDAP\Attribute\Internal;
 /**
  * Represents an EntryUUID Attribute
  */
-final class EntryUUID extends Internal
-{
+final class EntryUUID extends Internal {
 }

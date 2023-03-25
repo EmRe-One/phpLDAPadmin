@@ -7,6 +7,5 @@ use App\Classes\LDAP\Attribute\Internal;
 /**
  * Represents an HasSubordinates Attribute
  */
-final class HasSubordinates extends Internal
-{
+final class HasSubordinates extends Internal {
 }

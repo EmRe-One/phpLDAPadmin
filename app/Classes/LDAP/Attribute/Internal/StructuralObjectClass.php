@@ -7,6 +7,5 @@ use App\Classes\LDAP\Attribute\Internal;
 /**
  * Represents an StructuralObjectClass Attribute
  */
-final class StructuralObjectClass extends Internal
-{
+final class StructuralObjectClass extends Internal {
 }
